@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>КвестоМастер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Стартовый экран -->
+  <div id="start-screen" class="screen">
+    <h1>КвестоМастер</h1>
+    <p>Создай квест для своего ребёнка за 5 минут!</p>
+    <button onclick="startGame()">Начать квест</button>
+    <a href="privacy.html" target="_blank">Политика конфиденциальности</a>
+  </div>
+
+  <!-- Игровой экран -->
+  <div id="game-screen" class="screen" style="display:none;">
+    <div id="map">
+      <div class="location" id="loc1">1</div>
+      <div class="location" id="loc2">2</div>
+      <div class="location" id="loc3">3</div>
+      <div class="location" id="loc4">4</div>
+      <div class="location" id="loc5">5</div>
+      <div class="location" id="loc6">6</div>
+      <div class="location">Ф</div>
+      <div id="player"></div>
+    </div>
+
+    <div id="game-container">
+      <div id="riddle-box"></div>
+      <div id="fragment-box" style="display:none;">
+        <h3>📜 Найден фрагмент!</h3>
+        <div id="fragment-text"></div>
+        <button onclick="nextRiddle()">Продолжить</button>
+      </div>
+      <div id="final-reveal" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

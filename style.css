@@ -1,0 +1,86 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: #111 url('assets/старт.jpg') center/cover fixed;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+button:hover { background: #d35400; }
+
+#map {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 300px;
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #d35400;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.location {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #e74c3c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+#loc1 { top:20px; left:30px; }
+#loc2 { top:60px; left:120px; }
+#loc3 { top:120px; left:40px; }
+#loc4 { top:180px; left:130px; }
+#loc5 { top:240px; left:50px; }
+#loc6 { top:100px; left:80px; }
+.location:nth-child(7) { top:280px; left:90px; }
+
+.location.collected { background: #f1c40f; }
+
+#player {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #f1c40f;
+  border-radius: 50%;
+  transition: all 1.5s;
+  top: 20px;
+  left: 30px;
+}
+
+#game-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#riddle-box, #fragment-box, #final-reveal {
+  background: rgba(0,0,0,0.85);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 500px;
+}
